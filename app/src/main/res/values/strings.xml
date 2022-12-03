@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">CRM</string>
+    <string name="call">Call</string>
+    <string name="name">Full Name:</string>
+    <string name="phone">Phone:</string>
+    <string name="location">Location:</string>
+    <string name="add_customer">Add Customer</string>
+    <string name="mt_data">You have no Customers,\n Add new One.</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="customer_name_hint">Enter Full Name</string>
+    <array name="actions">
+        <item>Add Action</item>
+        <item>Call</item>
+        <item>Visit</item>
+        <item>Follow up</item>
+    </array>
+    <string name="country_code">country code</string>
+    <string name="add_country_code">Enter country code</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="phone_number_hint">Enter Number</string>
+    <string name="add_location">Location</string>
+    <string name="location_hint">Enter Location</string>
+    <string name="comment">Comment...</string>
+    <string name="comment_label">Comment:</string>
+    <string name="add">Add</string>
+    <string name="customer_details">Customer Details</string>
+    <string name="empty_fields_hint">Field Can not be Empty</string>
+    <string name="action_selection_warning">You should select an action</string>
+    <string name="add_action">Add Action</string>
+    <string name="action_type">Action Type:</string>
+    <string name="update">Update Customer</string>
+</resources>

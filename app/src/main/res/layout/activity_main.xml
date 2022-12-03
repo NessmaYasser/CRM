@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity"
+    android:padding="16dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/customersRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addNewCustomer"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/noDataView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:text="@string/mt_data"
+        android:visibility="gone"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addNewCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="32dp"
+        android:background="@color/teal_700"
+        android:drawableStart="@drawable/ic_baseline_add_24"
+        android:paddingStart="16dp"
+        android:text="@string/add_customer"
+        android:textColor="@color/white" />
+
+    <ProgressBar
+        android:id="@+id/loaderView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>
