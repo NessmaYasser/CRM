@@ -20,6 +20,7 @@ class CustomerViewModel(
         _CustomerLiveData.value = CustomerViewState()
     }
 
+    // observe on database instance to get customer list
     fun getCustomersList(){
         add{
             repository.getCustomersList()
@@ -37,7 +38,7 @@ class CustomerViewModel(
 
         }
     }
-
+// add customer to data base
     fun addNewCustomer(customer: Customer){
         add{
             repository.addNewCustomer(customer)

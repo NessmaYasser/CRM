@@ -10,6 +10,8 @@ import java.lang.reflect.Type
  * converter for java.util.Date
  */
 class DataConverter {
+
+    //convert customerAction list to string gson
     @TypeConverter
     fun fromCustomerActionsList(countryLang: List<CustomerActions>?): String? {
         if (countryLang == null) {
@@ -21,6 +23,7 @@ class DataConverter {
         return gson.toJson(countryLang, type)
     }
 
+    //convert from string gson to customerAction list
     @TypeConverter
     fun toCustomerActionsList(countryLangString: String?): List<CustomerActions>? {
         if (countryLangString == null) {

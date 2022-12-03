@@ -23,6 +23,11 @@ import com.example.crm.utils.show
 import com.google.android.material.snackbar.Snackbar
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
+/**
+ * created by Nesma Yasser
+ *
+ * activity to add action to customer
+ */
 class CustomerDetailsActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityCustomerDetailsBinding

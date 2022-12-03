@@ -23,6 +23,11 @@ import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_add_customer.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
+/**
+ * created by Nesma Yasser
+ *
+ * activity to add new customer
+ */
 class AddCustomerActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityAddCustomerBinding
@@ -43,6 +48,7 @@ class AddCustomerActivity : AppCompatActivity() {
     }
 
     fun setupView() {
+        //set spinner of actions
         spinnerAdapter = CustomSpinnerAdapter(
             this@AddCustomerActivity,
             R.layout.unit_spinner_item,
@@ -90,7 +96,7 @@ class AddCustomerActivity : AppCompatActivity() {
 
                 override fun onNothingSelected(p0: AdapterView<*>?) {}
             }
-
+// fields validations and if is valid, add data to database
         binding.addBtn.setOnClickListener {
             if (Helper.validateWidget(binding.nameV).first) {
                 if (actionType.equals("")) {

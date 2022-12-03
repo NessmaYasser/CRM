@@ -5,6 +5,9 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import kotlinx.android.parcel.Parcelize
 
+/**
+ * database table named "Customer"
+ */
 @Parcelize
 @Entity(tableName = "Customer")
 data class Customer(

@@ -7,11 +7,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.crm.databinding.CustomerRvItemBinding
-import com.example.crm.model.Actions
 import com.example.crm.model.Customer
 import com.example.crm.ui.main.adapters.ActionsAdapter
-import com.example.crm.utils.hide
-import com.example.crm.utils.show
 
 class CustomersAdapter :
     ListAdapter<Customer, CustomersAdapter.CustomerViewHolder>(CustomersDiffUtil()) {

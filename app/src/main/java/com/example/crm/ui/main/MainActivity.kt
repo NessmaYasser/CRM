@@ -13,6 +13,11 @@ import com.example.crm.utils.hide
 import com.example.crm.utils.show
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
+/**
+ * Created bt Nesma Yasser
+ *
+ * main activity to show al customers
+ */
 class MainActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityMainBinding
@@ -24,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //observing on the state
         customerViewModel.customerLiveData.observe(this, Observer {
             renderViewState(it)
         })
@@ -32,6 +38,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun setupView() {
+        //setting customers list
         binding.customersRv.apply {
             adapter = customersAdapter
             layoutManager = LinearLayoutManager(this@MainActivity)
@@ -44,7 +51,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(AddCustomerActivity.buildIntent(this@MainActivity))
         }
     }
-
+//showing data depending on the state
     private fun renderViewState(state: CustomerViewState){
         if(state.loading)
             binding.loaderView.show()
