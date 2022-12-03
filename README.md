@@ -1,1 +1,1 @@
-# CRM
+Android application using Kotlin for a mini CRM where  the admin can add customers. And can add actions to these customers. The action types includes (call, visit or follow up) and  he can also record the results of these actions
